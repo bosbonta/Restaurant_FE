@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import OrderSummary from "../components/OrderSummary";
 import Receipt from "../components/Receipt";
+import Navbar from "../components/Navbar";
 
 function Checkout() {
   const [cart, setCart] = useState([]);
@@ -12,7 +13,7 @@ function Checkout() {
 
   return (
     <div>
-      <h1>Checkout</h1>
+      <Navbar />
       <OrderSummary cart={cart} />
       <Receipt cart={cart} />
     </div>
