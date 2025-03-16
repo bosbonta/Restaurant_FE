@@ -24,6 +24,10 @@ export default function Navbar() {
             Menu
             <div className="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500" />
           </button>
+          <button onClick={() => navigate("/admin")} className="group">
+            Admin
+            <div className="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500" />
+          </button>
         </div>
 
         {/* Icon Hamburger (Bisa dibuat interaktif nanti) */}

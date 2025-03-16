@@ -1,5 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import ImageGallery1 from "../assets/img/topping.png";
+import ImageGallery2 from "../assets/img/hero-img.png";
 
 export default function Header() {
   const navigate = useNavigate();
@@ -10,7 +12,8 @@ export default function Header() {
           <div className=" relative ">
             <div className=" absolute top-0 -left-48 z-0  opacity-50 ">
               <img
-                src="/src/assets/img/topping.png"
+                src={ImageGallery1}
+                alt="Deskripsi gambar"
                 className="w-36 z-0  h-full    object-fill fill-y text-y   "
               />
             </div>
@@ -53,7 +56,7 @@ export default function Header() {
               />
             </svg>
             <div className="abg-orange-400 mx-auto w-fit overflow-hidden rounded-[6rem] rounded-br-none rounded-tl-none custom-spin">
-              <img src="/src/assets/img/hero-img.png" alt="Deskripsi gambar" />
+              <img src={ImageGallery2} alt="Deskripsi gambar" />
             </div>
           </div>
         </div>

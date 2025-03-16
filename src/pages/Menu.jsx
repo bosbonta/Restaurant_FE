@@ -3,101 +3,118 @@ import MenuItem from "../components/MenuItem";
 import CartButton from "../components/CartButton";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import ImageGallery1 from "../assets/img/menu-item-0.png";
+import ImageGallery2 from "../assets/img/menu-item-1.png";
+import ImageGallery3 from "../assets/img/menu-item-2.png";
+import ImageGallery4 from "../assets/img/menu-item-3.png";
+import ImageGallery5 from "../assets/img/menu-item-4.png";
+import ImageGallery6 from "../assets/img/menu-item-5.png";
+import ImageGallery7 from "../assets/img/menu-item-6.png";
+import ImageGallery8 from "../assets/img/menu-item-7.png";
+import ImageGallery9 from "../assets/img/menu-item-8.png";
+import ImageGallery10 from "../assets/img/menu-item-9.png";
+import ImageGallery11 from "../assets/img/menu-item-10.png";
+import ImageGallery12 from "../assets/img/menu-item-11.png";
+import ImageGallery13 from "../assets/img/menu-item-12.png";
+import ImageGallery14 from "../assets/img/menu-item-13.png";
+import ImageGallery15 from "../assets/img/menu-item-14.png";
+import ImageGallery16 from "../assets/img/menu-item-15.png";
+import ImageGallery17 from "../assets/img/menu-item-16.png";
 
 const menuData = [
   {
     id: 1,
     name: "Salad Sayur",
     price: 34900,
-    image: "/src/assets/img/menu-item-0.png",
+    image: ImageGallery1,
   },
   {
     id: 2,
     name: "Tahu Sambal Bacem",
     price: 25000,
-    image: "/src/assets/img/menu-item-1.png",
+    image: ImageGallery2,
   },
   {
     id: 3,
     name: "Lumpia Udang",
     price: 29000,
-    image: "/src/assets/img/menu-item-2.png",
+    image: ImageGallery3,
   },{
     id: 4,
     name: "Spageti Bolognese",
     price: 35000,
-    image: "/src/assets/img/menu-item-3.png",
+    image: ImageGallery4,
   },{
     id: 5,
     name: "Healty Food",
     price: 25000,
-    image: "/src/assets/img/menu-item-4.png",
+    image: ImageGallery5,
   },{
     id: 6,
     name: "Beef Steak",
     price: 55000,
-    image: "/src/assets/img/menu-item-5.png",
+    image: ImageGallery6,
   },{
     id: 7,
     name: "Nugget & Fries",
     price: 20000,
-    image: "/src/assets/img/menu-item-6.png",
+    image: ImageGallery7,
   },{
     id: 8,
     name: "Healty Food 2",
     price: 15000,
-    image: "/src/assets/img/menu-item-7.png",
+    image: ImageGallery8,
   },{
     id: 9,
     name: "Makaroni Schotel",
     price: 42000,
-    image: "/src/assets/img/menu-item-8.png",
+    image: ImageGallery9,
   },{
     id: 10,
     name: "Chicken Steak",
     price: 50000,
-    image: "/src/assets/img/menu-item-9.png",
+    image: ImageGallery10,
   },
   {
     id: 11,
     name: "Jus Jeruk Manis",
     price: 7000,
-    image: "/src/assets/img/menu-item-10.png",
+    image: ImageGallery11,
   },
   {
     id: 12,
     name: "Teh Manis Dingin",
     price: 5000,
-    image: "/src/assets/img/menu-item-11.png",
+    image: ImageGallery12,
   },
   {
     id: 13,
     name: "Sprite Dingin",
     price: 7000,
-    image: "/src/assets/img/menu-item-12.png",
+    image: ImageGallery13,
   },
   {
     id: 14,
     name: "Jus Strawberry",
     price: 12000,
-    image: "/src/assets/img/menu-item-13.png",
+    image: ImageGallery14,
   },
   {
     id: 15,
     name: "Es Jeruk Soda",
     price: 12000,
-    image: "/src/assets/img/menu-item-14.png",
+    image: ImageGallery15,
   },{
     id: 16,
     name: "Pop Ice",
     price: 5000,
-    image: "/src/assets/img/menu-item-15.png",
+    image: ImageGallery16,
   },
   {
     id: 17,
     name: "Coca Cola",
     price: 6000,
-    image: "/src/assets/img/menu-item-16.png",
+    image: ImageGallery17,
   },
 ];
 

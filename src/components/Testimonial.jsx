@@ -1,13 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
 import KeenSlider from "keen-slider";
 import "keen-slider/keen-slider.min.css";
+import ImageGalery1 from "../assets/img/testimonials-1.jpg";
+import ImageGalery2 from "../assets/img/testimonials-2.jpg";
+import ImageGalery3 from "../assets/img/testimonials-3.jpg";
+import ImageGalery4 from "../assets/img/testimonials-4.jpg";
 
 const testimonials = [
   {
     id: 1,
     name: "Muhammad Ari",
-    image:
-      "/src/assets/img/testimonials-1.jpg",
+    image: ImageGalery1,
     review:
       "Pelayanan sangat memuaskan, makanan enak, harga terjangkau. Tempatnya juga nyaman, cocok untuk nongkrong bareng teman-teman.",
     rating: 4,
@@ -15,8 +18,7 @@ const testimonials = [
   {
     id: 2,
     name: "Selominta Sari",
-    image:
-      "/src/assets/img/testimonials-2.jpg",
+    image:ImageGalery2,
     review:
       "Saya sarapan, makan pagi, sampai makan malam di sini. Semua makanan yang saya coba enak-enak. Pelayanan juga ramah. Harga terjangkau. Pokoknya sangat woth it",
     rating: 4,
@@ -24,8 +26,7 @@ const testimonials = [
   {
     id: 3,
     name: "Emma Fatahilah",
-    image:
-      "/src/assets/img/testimonials-3.jpg",
+    image: ImageGalery3,
     review:
       "Cocok buat nugas sampai begadang. ",
     rating: 4,
@@ -33,8 +34,7 @@ const testimonials = [
   {
     id: 4,
     name: "Niko Putra",
-    image:
-      "/src/assets/img/testimonials-4.jpg",
+    image: ImageGalery4,
     review:
       "Sering ada diskon, jadi bisa hemat. Makanannya juga enak-enak. Pelayanannya juga ramah. Tempatnya nyaman. Pokoknya recommended banget deh.",
     rating: 5,

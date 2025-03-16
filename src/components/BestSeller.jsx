@@ -1,21 +1,24 @@
 import React from "react";
+import ImageGalery1 from "../assets/img/menu-item-1.png";
+import ImageGalery2 from "../assets/img/menu-item-2.png";
+import ImageGalery3 from "../assets/img/menu-item-3.png";
 const menu = [
   {
     name: "Tahu Sambal Bacem",
     price: "25K",
-    image:"/src/assets/img/menu-item-1.png",
+    image: ImageGalery1,
     description: "Tahu yang diolah dengan bumbu bacem yang khas. Pedas Nagis",
   },
   {
     name: "Lumpia Udang",
     price: "29K",
-    image:"/src/assets/img/menu-item-2.png",
+    image: ImageGalery2,
     description: "Udang segar yang dibalut dengan kulit lumpia yang renyah",
   },
   {
     name: "Spageti Bolognese",
     price: "35K",
-    image:"/src/assets/img/menu-item-3.png",
+    image: ImageGalery3,
     description: "Spageti dengan saus bolognese yang gurih dan lezat",
   }, 
  
