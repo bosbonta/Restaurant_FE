@@ -1,26 +1,35 @@
 import { useState } from "react";
+import Lottie from "lottie-react";
+import loadingAnimation from "../assets/js/loading.json";
 
 function Receipt({ cart }) {
   const total = cart.reduce((sum, item) => sum + item.price, 0);
   const [receipt, setReceipt] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const handleCheckout = async () => {
-    const orderData = { items: cart, total };
+    setLoading(true); // Aktifkan loader
 
-    try {
-      const response = await fetch("http://localhost:5000/api/orders", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(orderData),
-      });
+    setTimeout(async () => {
+      const orderData = { items: cart, total };
 
-      const data = await response.json();
-      setReceipt(data);
-      localStorage.removeItem("cart");
-    } catch (error) {
-      console.error("Error:", error);
-      alert("Terjadi kesalahan.");
-    }
+      try {
+        const response = await fetch("http://localhost:5000/api/orders", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(orderData),
+        });
+
+        const data = await response.json();
+        setReceipt(data);
+        localStorage.removeItem("cart");
+      } catch (error) {
+        console.error("Error:", error);
+        alert("Terjadi kesalahan.");
+      } finally {
+        setLoading(false);
+      }
+    }, 2000); 
   };
 
   return (
@@ -29,13 +38,24 @@ function Receipt({ cart }) {
       <p className="text-lg font-medium text-gray-700">
         Rp {total.toLocaleString()}
       </p>
-      <button
-        onClick={handleCheckout}
-        className="mt-4 w-full rounded-md bg-green-600 px-5 py-3 text-white font-medium uppercase tracking-wide transition hover:bg-green-700"
-      >
-        Bayar Sekarang
-      </button>
 
+      {/* Tampilkan loader saat checkout */}
+      {loading ? (
+        <div className="flex justify-center items-center mt-4">
+          <Lottie animationData={loadingAnimation} loop={true} className="w-24 h-24" />
+        </div>
+      ) : (
+        !receipt && (
+          <button
+            onClick={handleCheckout}
+            className="mt-4 w-full rounded-md bg-green-600 px-5 py-3 text-white font-medium uppercase tracking-wide transition hover:bg-green-700"
+          >
+            Bayar Sekarang
+          </button>
+        )
+      )}
+
+      {/* Tampilkan struk setelah pembayaran */}
       {receipt && (
         <div className="mt-6 border border-gray-300 rounded-lg p-4 text-left">
           <h3 className="text-lg font-semibold text-gray-900 mb-2">

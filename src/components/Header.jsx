@@ -18,7 +18,7 @@ export default function Header() {
               <p className="flex text-sm uppercase text-g1  ">Tentang Kami</p>
               <h2 className="mb-6 max-w-lg text-5xl font-light leading-snug tracking-tight text-g1 sm:text-7xl sm:leading-snug">
                 Warung
-                <span className="my-1 inline-block border-b-8 border-g4 bg-white px-4 font-bold text-g4 animate__animated animate__flash">
+                <span className="my-1 inline-block border-b-8 border-g4 bg-white px-4 font-bold text-g4 animate-pulse">
                   Pojok
                 </span>
               </h2>
@@ -52,7 +52,7 @@ export default function Header() {
                 d="M16 17l-4 4m0 0l-4-4m4 4V3"
               />
             </svg>
-            <div className="abg-orange-400 mx-auto w-fit overflow-hidden rounded-[6rem] rounded-br-none rounded-tl-none">
+            <div className="abg-orange-400 mx-auto w-fit overflow-hidden rounded-[6rem] rounded-br-none rounded-tl-none custom-spin">
               <img src="/src/assets/img/hero-img.png" alt="Deskripsi gambar" />
             </div>
           </div>

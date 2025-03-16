@@ -75,3 +75,35 @@
   cursor: pointer;
 }
 
+@keyframes custom-spin {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(20deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes custom-spin-reverse {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(-20deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.custom-spin {
+  animation: custom-spin 10s ease-in-out infinite alternate;
+}
+@keyframes pulse-warung {
+  0%, 50% { transform: scale(1); color: #000; } /* Warna default */
+  25% { transform: scale(1.5); color: #1ec8c8; } /* Warung membesar & berubah warna */
+}
+
+@keyframes pulse-pojok {
+  50%, 100% { transform: scale(1); color: #000; } /* Warna default */
+  75% { transform: scale(1.5); color: #1ec8c8; } /* Pojok membesar & berubah warna */
+}
+
+.pulse-warung {
+  animation: pulse-warung 2s ease-in-out infinite;
+}
+
+.pulse-pojok {
+  animation: pulse-pojok 2s ease-in-out infinite;
+}
